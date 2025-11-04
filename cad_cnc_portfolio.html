@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAD &amp; CNC Project Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            margin: 0;
+            padding: 2rem 1.5rem 3rem;
+            background-color: #f5f5f7;
+            color: #222222;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 2rem 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        h1, h2 {
+            font-weight: 650;
+            color: #111111;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+        }
+        h2 {
+            margin-top: 2rem;
+            margin-bottom: 0.25rem;
+        }
+        .subtitle {
+            color: #555555;
+            margin-bottom: 1.5rem;
+            font-size: 0.98rem;
+        }
+        .project {
+            border-top: 1px solid #e4e4e7;
+            padding-top: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .project:first-of-type {
+            border-top: none;
+            padding-top: 0;
+            margin-top: 0;
+        }
+        .meta {
+            font-size: 0.9rem;
+            color: #555555;
+            margin-top: 0.35rem;
+        }
+        .skills-list {
+            list-style: disc;
+            padding-left: 1.3rem;
+            margin-top: 0.4rem;
+        }
+        .skills-list li {
+            margin-bottom: 0.15rem;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 0.75rem;
+        }
+        .images img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+            background: #fafafa;
+        }
+        .images img.single {
+            width: min(360px, 100%);
+        }
+        .images img.wide {
+            width: min(460px, 100%);
+        }
+        .tagline {
+            font-size: 0.92rem;
+            color: #6b7280;
+            margin-top: 0.25rem;
+        }
+        .section-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #9ca3af;
+            margin-bottom: 0.2rem;
+        }
+        .pill-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin-top: 0.4rem;
+        }
+        .pill {
+            font-size: 0.8rem;
+            padding: 0.15rem 0.55rem;
+            border-radius: 999px;
+            background-color: #f3f4f6;
+            border: 1px solid #e5e7eb;
+            color: #4b5563;
+        }
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 0.75rem 1.5rem;
+            margin-top: 0.75rem;
+        }
+        .tools-grid h3 {
+            font-size: 0.95rem;
+            margin-bottom: 0.25rem;
+        }
+        .tools-grid ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+            font-size: 0.9rem;
+            color: #4b5563;
+        }
+        .tools-grid li::before {
+            content: "• ";
+            color: #6366f1;
+        }
+        @media (max-width: 640px) {
+            .container {
+                padding: 1.5rem 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>CAD &amp; CNC Project Portfolio</h1>
+    <p class="subtitle">
+        Selected CAD and CNC fabrication projects that demonstrate design for manufacture, fixturing, and hands-on machining,
+        using tools such as Fusion 360, SolidWorks, and shop-floor CNC equipment.
+    </p>
+
+    <div class="project">
+        <h2>Incense Stand</h2>
+        <p class="tagline">Organic form incense holder machined from hardwood.</p>
+        <p>
+            Designed a modular incense stand inspired by flowing geometry, with focus on clean contours and stable footing.
+            The model was parametrically defined to allow quick adjustment of overall length and slot dimensions.
+        </p>
+        <div class="section-label">Skills Demonstrated</div>
+        <ul class="skills-list">
+            <li>Fusion 360 three dimensional modeling and parametric design</li>
+            <li>CAM setup for three axis CNC milling</li>
+            <li>Surfacing, sanding, and oil finish workflows</li>
+        </ul>
+        <div class="images">
+            <img src="image1.png" alt="Incense stand CNC project" class="single">
+        </div>
+    </div>
+
+    <div class="project">
+        <h2>Marble Puzzle</h2>
+        <p class="tagline">Tight tolerance interlocking wooden puzzle.</p>
+        <p>
+            Created a multi piece marble puzzle to test repeatability, clearances, and fit on the CNC router.
+            The design required consistent pocket depths and alignment across multiple toolpaths.
+        </p>
+        <p class="meta">
+            <strong>Tools used:</strong> Fusion 360, Shapeoko router, one eighth inch ball end mill<br>
+            <strong>Material:</strong> Maple
+        </p>
+        <div class="images">
+            <img src="image2.png" alt="CNC milled marble puzzle" class="single">
+        </div>
+    </div>
+
+    <div class="project">
+        <h2>Serving Tray</h2>
+        <p class="tagline">Ergonomic wooden serving tray with CNC sculpted handles.</p>
+        <p>
+            Designed a tray with integrated handles and rounded pockets for comfortable carrying.
+            The model was set up with separate roughing and finishing passes to balance machining time and surface quality.
+        </p>
+        <div class="images">
+            <img src="image3.png" alt="CNC machined serving tray" class="single">
+        </div>
+    </div>
+
+    <div class="project">
+        <h2>Wooden Cutting Boards</h2>
+        <p class="tagline">Patterned cutting boards using laminated hardwoods.</p>
+        <p>
+            Developed several cutting board layouts using alternating species and grain directions.
+            The workflow included glue up planning, surfacing toolpaths, edge profiling, and chamfers for hand comfort.
+        </p>
+        <div class="images">
+            <img src="image4.png" alt="Cutting board example one" class="wide">
+            <img src="image5.png" alt="Cutting board example two" class="wide">
+            <img src="image6.png" alt="Cutting board example three" class="wide">
+        </div>
+    </div>
+
+    <div class="project">
+        <h2>Spoilboard Fixturing Design</h2>
+        <p class="tagline">Custom spoilboard and workholding layout for repeatable setups.</p>
+        <p>
+            Designed a spoilboard system with reference fences and threaded inserts to speed up part alignment.
+            The pattern supports both one off projects and small batch production without reclamping reference edges.
+        </p>
+        <div class="images">
+            <img src="image7.png" alt="Spoilboard fixturing CAD layout" class="wide">
+        </div>
+    </div>
+
+    <div class="project">
+        <h2>Rapid CAD Concept Models</h2>
+        <p class="tagline">Speed modeled parts for form exploration and design studies.</p>
+        <p>
+            A collection of concept parts created under time limits to practice fast, clean modeling.
+            These models explore fillets, draft angles, and features appropriate for machining and other fabrication methods.
+        </p>
+        <div class="images">
+            <img src="image8.png" alt="Rapid CAD model one">
+            <img src="image9.png" alt="Rapid CAD model two">
+            <img src="image10.png" alt="Rapid CAD model three">
+            <img src="image11.png" alt="Rapid CAD model four">
+            <img src="image12.png" alt="Rapid CAD model five">
+            <img src="image13.png" alt="Rapid CAD model six">
+            <img src="image14.png" alt="Rapid CAD model seven">
+        </div>
+    </div>
+
+    <div class="project">
+        <h2>Other CAD Projects</h2>
+        <p class="tagline">Additional assemblies and components modeled for fabrication.</p>
+        <div class="images">
+            <img src="image15.png" alt="CAD assembly example" class="wide">
+            <img src="image16.png" alt="CAD component example" class="wide">
+        </div>
+    </div>
+
+    <div class="project">
+        <h2>Tools and Skills Summary</h2>
+        <div class="tools-grid">
+            <div>
+                <h3>CAD</h3>
+                <ul>
+                    <li>Fusion 360</li>
+                    <li>SolidWorks</li>
+                </ul>
+            </div>
+            <div>
+                <h3>CAM and Fabrication</h3>
+                <ul>
+                    <li>Fusion 360 Manufacturing workspace</li>
+                    <li>Carbide Create and similar router workflows</li>
+                    <li>CNC routing and laser cutting</li>
+                    <li>Sanding, finishing, and edge profiling</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Materials</h3>
+                <ul>
+                    <li>Maple, walnut, and oak</li>
+                    <li>Acrylic and basic plastics</li>
+                    <li>Entry level aluminum work</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Focus Areas</h3>
+                <ul>
+                    <li>Parametric design</li>
+                    <li>Fixturing and workholding</li>
+                    <li>Tolerance and fit testing</li>
+                    <li>Toolpath optimization</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
